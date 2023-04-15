@@ -24,10 +24,13 @@ func init() {
 }
 
 func loadTheEnv() {
-	err := godotenv.Load("C:\\Users\\jedrzej\\GolandProjects\\go-todo\\.env")
+	log.Println("Loading the .env file")
+
+	err := godotenv.Load("/app/.env")
 	if err != nil {
 		log.Fatal("Error loading the .env file")
 	}
+
 }
 
 func createDBInstance() {
