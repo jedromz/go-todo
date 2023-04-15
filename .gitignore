@@ -1,0 +1,21 @@
+# ignore node_modules directory
+/frontend/node_modules/
+
+# ignore Go build artifacts
+*.exe
+*.test
+*.prof
+
+# ignore JetBrains GoLand IDE specific files
+.idea/
+
+# ignore generated files
+generated/
+
+# ignore binary files
+*.dll
+*.so
+*.dylib
+
+# ignore macOS-specific files
+.DS_Store
